@@ -1,3 +1,9 @@
+<?php
+  $recipes = [
+    ["Cassoulet", "[...]", "mickael.andrieu@exemple.com", true],
+    ["Couscous", "[...]", "mickael.andrieu@exemple.com", false],
+  ];
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -9,20 +15,7 @@
 <body>
     
 </body>
- <?php 
-    $valeur = 10 ;
-    switch($valeur){
-        case 0:
-            echo "Tu es nul";
-        break;
-
-        case 10:
-            echo "Tu as réussi le test";
-        break;
-
-        default:
-            echo "fin de l'instruction";
-            
-    }
- ?>
+  <?php  for($line = 0; $line <= 1; $line++): ?>
+    <li> <?php echo $recipes[$line][0] ." ( " . $recipes[$line][2] . " )" ; ?> </li>
+  <?php endfor; ?>
 </html>

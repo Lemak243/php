@@ -10,6 +10,7 @@
   <ul>
     <li><a href="boucle.php">Aller vers ma boucle</a> </li>
     <li><a href="tableau.php">Aller vers mon tableau</a> </li>
+    <li><a href="api.php">API</a> </li>
   </ul>
 </body>
 </html>

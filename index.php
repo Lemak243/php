@@ -11,6 +11,7 @@
     <li><a href="boucle.php">Aller vers ma boucle</a> </li>
     <li><a href="tableau.php">Aller vers mon tableau</a> </li>
     <li><a href="function.php">Aller vers la fonction</a> </li>
+    <li><a href="MonScriptErreur.php">Au secours ! Mon script plante !</a> </li>
     <li><a href="api.php">API</a> </li>
   </ul>
 </body>

@@ -14,6 +14,7 @@
     <li><a href="MonScriptErreur.php">Au secours ! Mon script plante !</a> </li>
     <li><a href="blocsFonctionnels/index.php">Organiser les pages du site web en blocs fonctionnels</a> </li>
     <li><a href="ecouter_url/index.php">Ecouter URL</a> </li>
+    <li><a href="administrer_des_formulaires/index.php">Administrer des formulaire</a> </li>
     <li><a href="api.php">API</a> </li>
   </ul>
 </body>

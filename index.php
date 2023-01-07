@@ -16,6 +16,7 @@
     <li><a href="ecouter_url/index.php">Ecouter URL</a> </li>
     <li><a href="administrer_des_formulaires/index.php">Administrer des formulaire</a> </li>
     <li><a href="api.php">API</a> </li>
+    <li><a href="upload/index.php">Envoie des fichiers</a> </li>
   </ul>
 </body>
 </html>

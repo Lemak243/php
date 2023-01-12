@@ -7,7 +7,7 @@ if (isset($_POST['email']) &&  isset($_POST['password'])) {
             $user['email'] === $_POST['email'] && $user['password'] === $_POST['password']
         ) {
             $loggedUser = [
-                'email' => $user['email'],
+                'email' => $user['email']
             ];
         } else {
             $errorMessage = sprintf('Les informations envoyées ne permettent pas de vous identifier : (%s/%s)', $_POST['email'], $_POST['password']

@@ -17,6 +17,7 @@
     <li><a href="administrer_des_formulaires/index.php">Administrer des formulaire</a> </li>
     <li><a href="api.php">API</a> </li>
     <li><a href="upload/index.php">Envoie des fichiers</a> </li>
+    <li><a href="connexion/login.php">Connexion</a> </li>
   </ul>
 </body>
 </html>

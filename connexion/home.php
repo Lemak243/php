@@ -1,3 +1,15 @@
+<?php session_start(); ?>
+
+<?php setcookie(
+        'LOGGED_USER',
+        $_SESSION['LOGGED_USER'],
+        [
+            'expires' => time() + 365*24*3600,
+            'secure' => true,
+            'httponly' => true,
+        ]
+        ); ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,6 +44,7 @@
         <?php endif; ?>
     </div>
 
+    
     <?php include_once('footer.php'); ?>
 </body>
 </html>

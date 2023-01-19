@@ -15,7 +15,7 @@
     <div class="container">
 
     <?php include_once('header.php'); ?>
-        <h1>Contactez nous</h1>
+        <h1>Contactez nous cher <?php echo $_COOKIE['LOGGED_USER']; ?> !</h1>
         <form action="submit_contact.php" method="POST">
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>

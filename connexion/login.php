@@ -3,12 +3,9 @@
 // Validation du formulaire
 if (isset($_POST['email']) &&  isset($_POST['password'])) {
     foreach ($users as $user) {
-        if (
-            $user['email'] === $_POST['email'] && $user['password'] === $_POST['password']
-        ) {
-            $loggedUser = [
-                'email' => $user['email']
-            ];
+        if ( $user['email'] === $_POST['email'] && $user['password'] === $_POST['password']) {
+            //$loggedUser = ['email' => $user['email']];
+            $_SESSION['LOGGED_USER'] = $user['email'];
         } else {
             $errorMessage = sprintf('Les informations envoyées ne permettent pas de vous identifier : (%s/%s)', $_POST['email'], $_POST['password']
             );
@@ -20,7 +17,7 @@ if (isset($_POST['email']) &&  isset($_POST['password'])) {
 <!--
    Si utilisateur/trice est non identifié(e), on affiche le formulaire
 -->
-<?php if(!isset($loggedUser)): ?>
+<?php if(!isset($_SESSION['LOGGED_USER'])): ?>
 <form action="home.php" method="post">
     <!-- si message d'erreur on l'affiche -->
     <?php if(isset($errorMessage)) : ?>
@@ -44,6 +41,6 @@ if (isset($_POST['email']) &&  isset($_POST['password'])) {
 -->
 <?php else: ?>
     <div class="alert alert-success" role="alert">
-        Bonjour <?php echo $loggedUser['email']; ?> et bienvenue sur le site !
+        Bonjour <?php echo $_SESSION['LOGGED_USER']; ?> et bienvenue sur le site !
     </div>
 <?php endif; ?>

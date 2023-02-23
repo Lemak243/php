@@ -18,6 +18,7 @@
     <li><a href="api.php">API</a> </li>
     <li><a href="upload/index.php">Envoie des fichiers</a> </li>
     <li><a href="connexion/home.php">Connexion</a> </li>
+    <li><a href="bdd/index.php">Ma premier connexion avec une bdd</a> </li>
   </ul>
 </body>
 </html>
